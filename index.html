@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Photography Portfolio">
+    <title>Photography Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- This is a test -->
+</head>
+<body> 
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#home">Gabriel Rayat</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <svg id="theme-icon-sun" class="theme-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg id="theme-icon-moon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('assets/hero.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in-up">Capturing the interplay of light and life in the Philippines</h1>
+            <p class="fade-in-up delay-1">Explore the gallery</p>
+            <a href="#gallery" class="btn fade-in-up delay-2">View Work</a>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Selected Works</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="street">Street</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+            
+            <div class="masonry-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img1.jpeg" alt="Street photography in Manila" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item street">
+                    <img data-src="gallery/img2.jpg" alt="Dramatic portrait of a person in shadow" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img3.jpeg" alt="Moody architectural photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img4.jpeg" alt="Epic mountain landscape" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item landscape">
+                    <img data-src="gallery/img5.jpeg" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Landscape</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img6.jpg" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item street">
+                    <img data-src="gallery/img7.png" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img8.jpg" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img9.jpeg" alt="Portrait sunset photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img10.jpeg" alt="Portrait sunset photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item street">
+                    <img data-src="gallery/img11.jpeg" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img12.jpeg" alt="Close-up macro photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item street">
+                    <img data-src="gallery/img13.jpeg" alt="Street portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img14.jpeg" alt="Street portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img15.jpg" alt="Nature portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img16.jpeg" alt="portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img17.png" alt="Sunset portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img18.jpeg" alt="Nature portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img19.jpg" alt="Nature portrait sunset photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img20.jpg" alt="Nature portrait photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item landscape">
+                    <img data-src="gallery/img21.png" alt="Nature landscape photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Landscape</span>
+                    </div>
+                </div>
+                <div class="gallery-item portrait">
+                    <img data-src="gallery/img22.jpeg" alt="Street photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+                <div class="gallery-item street">
+                    <img data-src="gallery/img23.jpeg" alt="Street architectural photography" class="lazyload">
+                    <div class="item-overlay">
+                        <span>Street</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Expanded Image">
+            <div class="lightbox-caption"></div>
+        </div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Placeholder headshot if one isn't available -->
+                    <div class="headshot-placeholder">
+                        <img data-src="assets/about_me.jpg" alt="about me picture" class="lazyload">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a passionate photographer dedicated to capturing raw emotion, dramatic lighting, and compelling stories. My journey behind the lens has always been driven by a fascination with how light shapes our world.</p>
+                    
+                    <p>Alongside my creative pursuits in photography, I am also a Computer Science student. This duality of art and logic continually inspires me to explore new ways to present visual narratives, much like the creation of this very website.</p>
+                    
+                    <h3>My Gear</h3>
+                    <ul class="gear-list">
+                        <li>Sony A58 DSLR</li>
+                        <li>Infinix Hot 11s</li>
+                    </ul>
+
+                    <div class="portfolio-cta">
+                        <p>Interested in my technical work?</p>
+                        <a href="https://gabrielrayat-dev.github.io/Project/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Check out my CS Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Whether you're looking for a portrait session, event coverage, or a collaborative project, I'd love to hear from you.</p>
+            
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <div class="social-links">
+                    <h3>Follow My Journey</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/gabrielv_r01?igsh=NjJiMXdwZmw0bXM4" target="_blank" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" aria-label="Behance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-4"></path><path d="M14 14.5c0 2 1.5 3.5 4 3.5s4-1.5 4-3.5"></path><path d="M22 14.5c0-2-1.5-3.5-4-3.5s-4 1.5-4 3.5"></path><path d="M2 14c0 2 1.5 3 3.5 3h1.5a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1.5C3.5 6 2 7 2 9c0 1.5 1 2.5 2 3-1 .5-2 1.5-2 3z"></path><path d="M8 12c0-2-1.5-3-3.5-3H3v6h1.5C6.5 15 8 14 8 12z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <!-- nag edit ako dito testing ulit kung ma babago hayss -->
+            <p>&copy; 2026 Gabriel Rayat. All rights reserved. (AntiGravity-Project)</p>
+        </div>
+    </footer>
+
+    <!-- Main Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
